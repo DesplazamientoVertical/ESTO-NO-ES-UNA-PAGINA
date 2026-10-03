@@ -1,0 +1,48 @@
+/* The dark page stays intact until the visitor starts the music. */
+body{--trip:0;--trip-hue:0deg;--trip-shift:0px;--trip-turn:0deg}
+.border-gif{position:relative;z-index:60;align-self:flex-start;margin:0;margin-top:auto;padding:4px;background:#000;border:3px outset #aaa;transform:none}
+.border-gif img{display:block;width:125px;height:auto}
+.impala-control{position:relative;z-index:60;width:100%;margin-top:auto;padding:4px;background:#000 url('assets/retro-black-stone.jpg') repeat;border:4px ridge #888;text-align:center}
+#impala-button{width:100%;font:bold 17px 'Times New Roman',Times,serif;line-height:1.15;padding:12px 6px;border:4px outset #aaa;background:#000 url('assets/retro-dark-chrome.gif') repeat;color:#fff}
+#impala-button:hover{background:#900 url('assets/retro-rough-red.jpg') repeat;border-color:#f00}
+.impala-visual{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;opacity:var(--trip);background:#140027}
+.impala-visual:before,.impala-visual:after{content:'';position:absolute;inset:-70vmax;animation-play-state:paused}
+.impala-visual:before{background:repeating-conic-gradient(from 20deg at 50% 50%,#ff00a2 0deg 12deg,#ff5e00 12deg 24deg,#faff00 24deg 36deg,#00ff69 36deg 48deg,#00ddff 48deg 60deg,#7800ff 60deg 72deg);animation:impala-wheel 22s linear infinite;filter:hue-rotate(var(--trip-hue))}
+.impala-visual:after{background:repeating-radial-gradient(ellipse at 50% 50%,transparent 0 30px,#000 31px 48px,transparent 49px 77px,#fff 78px 81px,transparent 82px 120px);mix-blend-mode:difference;animation:impala-rings 13s ease-in-out infinite;opacity:.85}
+body:not(.impalero) .impala-visual:before,body:not(.impalero) .impala-visual:after{animation-play-state:paused}
+@keyframes impala-wheel{from{transform:rotate(0deg) scale(.78)}to{transform:rotate(360deg) scale(.78)}}
+@keyframes impala-rings{0%,100%{transform:rotate(-15deg) scale(.75,1.2)}50%{transform:rotate(15deg) scale(1.2,.75)}}
+.impalero .impala-control{border-color:#fff;background:#000}
+.impalero #impala-button{color:#fff;background:#000;border-color:hsl(var(--trip-hue) 100% 60%)}
+.impalero .page-shell{background:rgb(0 0 0 / calc(1 - var(--trip)*.85));border-color:hsl(var(--trip-hue) calc(var(--trip)*100%) 53%)}
+.impalero :is(.masthead,.sticker-bomb,.columns,.window,.album-note,.sidebar-sticker,.welcome-box,.personal-photo,.odd-gif-grid figure,.thanks-note,.friend-altar,.temple-callout,.visit-box,.portal-strip,footer){
+  background-color:rgb(0 0 0 / calc(1 - var(--trip)*.8));
+  background-image:linear-gradient(115deg,hsl(calc(var(--trip-hue) + 310deg) 100% 50% / calc(var(--trip)*.78)),hsl(calc(var(--trip-hue) + 250deg) 100% 50% / calc(var(--trip)*.6)) 30%,hsl(calc(var(--trip-hue) + 170deg) 100% 50% / calc(var(--trip)*.75)) 60%,hsl(calc(var(--trip-hue) + 55deg) 100% 50% / calc(var(--trip)*.8))),url('assets/retro-black-stone.jpg');
+  background-blend-mode:screen,normal;
+  border-color:hsl(calc(var(--trip-hue) + 60deg) calc(var(--trip)*100%) 53%);
+}
+.impalero .columns{background-image:linear-gradient(75deg,rgb(255 0 130 / calc(var(--trip)*.55)),rgb(0 255 140 / calc(var(--trip)*.35)),rgb(255 235 0 / calc(var(--trip)*.45)));background-blend-mode:normal}
+.impalero :is(.titlebar,.photo-label,.pasted-sticker,.topline,.dialog-bar){background-image:linear-gradient(90deg,rgb(255 0 230 / calc(var(--trip)*.85)),rgb(0 255 255 / calc(var(--trip)*.85)),rgb(255 255 0 / calc(var(--trip)*.85))),url('assets/retro-dark-chrome.gif');border-color:hsl(calc(var(--trip-hue) + 160deg) calc(var(--trip)*100%) 53%)}
+.impalero :is(.masthead h1,.welcome-box h2,.section-heading h2,.thanks-note h2,.friend-altar h2){filter:hue-rotate(var(--trip-hue));text-shadow:calc(var(--trip)*4px) 0 #ff00f7,calc(var(--trip)*-4px) 0 #00ffed}
+.impalero :is(.masthead h1 span+span,.welcome-box h2 em,.friend-altar h2,.album-note h2,.visit-box strong,.directory a,.portal-strip h2,.sidebar-sticker span){color:hsl(var(--trip-hue) 100% calc(50% + var(--trip)*13%))}
+.impalero main>section:nth-child(odd){transform:translateX(var(--trip-shift)) rotate(var(--trip-turn))}
+.impalero main>section:nth-child(even){transform:translateX(calc(var(--trip-shift)*-1)) rotate(calc(var(--trip-turn)*-1))}
+.impalero :is(.personal-photo img,.odd-gif-grid img,.pasted-sticker img,.brandon-photo,.border-gif img){filter:hue-rotate(calc(var(--trip-hue)*var(--trip))) saturate(calc(1 + var(--trip)*3));border-color:#fff}
+.impalero dialog{background-image:linear-gradient(140deg,rgb(255 0 110 / calc(var(--trip)*.6)),rgb(30 0 255 / calc(var(--trip)*.7))),url('assets/retro-black-stone.jpg')}
+.impalero .page-shell:after{content:'';position:fixed;inset:-30%;z-index:50;pointer-events:none;opacity:calc(var(--trip)*.32);mix-blend-mode:difference;background:repeating-radial-gradient(ellipse at 47% 53%,transparent 0 55px,#00ffff 56px 61px,transparent 62px 107px,#ff00f7 108px 118px,transparent 119px 151px,#fbff00 152px 160px);animation:impala-contours 17s ease-in-out infinite alternate}
+@keyframes impala-contours{from{transform:rotate(-20deg) scale(1.05,.8)}to{transform:rotate(20deg) scale(.8,1.05)}}
+.dialog-content .lucas-surprise h2{white-space:pre-line;font-size:27px;line-height:1.25;overflow-wrap:anywhere}
+@media(max-width:800px){
+  .impala-control{grid-column:3;border-width:3px;margin-top:0;align-self:end}
+  #impala-button{font-size:15px;padding:9px 5px}
+}
+@media(max-width:560px){
+  .border-gif{order:6;margin-top:0}
+  .border-gif img{width:85px}
+  .impala-control{grid-column:2}
+  .impalero main>section{transform:rotate(calc(var(--trip-turn)*.55))}
+}
+@media(prefers-reduced-motion:reduce){
+  .impala-visual:before,.impala-visual:after{animation:none!important}
+  .impalero main>section{transform:none!important}
+}
