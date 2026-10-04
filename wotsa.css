@@ -1,0 +1,6 @@
+#wotsa-button{width:100%;margin-top:10px;padding:12px 6px;border:4px outset #aaa;background:#000 url('assets/retro-dark-chrome.gif') repeat;color:#fff;font:bold 17px 'Times New Roman',Times,serif;line-height:1.15}
+#wotsa-button:hover{background:#900 url('assets/retro-rough-red.jpg') repeat;border-color:#f00}
+.wotsa-overlay{position:fixed;inset:0;z-index:2147483647;background:#000;overflow:hidden;touch-action:none;overscroll-behavior:none}
+.wotsa-overlay img{display:block;width:100%;height:100%;max-width:none;object-fit:fill;margin:0;border:0}
+body.wotsa-active{overflow:hidden}
+@media(max-width:800px){#wotsa-button{font-size:15px;padding:9px 5px}}
