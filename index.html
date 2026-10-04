@@ -18,6 +18,10 @@
   <link rel="stylesheet" href="impalero.css?v=14">
   <link rel="stylesheet" href="wotsa.css?v=1">
   <script src="wotsa.js?v=1" defer></script>
+  <link rel="stylesheet" href="time-420.css?v=1">
+  <script src="time-420.js?v=1" defer></script>
+  <link rel="stylesheet" href="messages.css?v=1">
+  <script src="messages.js?v=1" defer></script>
 </head>
 <body>
   <a class="skip" href="#quien-soy">Saltar a la presentación</a>
@@ -44,6 +48,14 @@
     </div>
     <div class="columns">
       <aside class="left-column">
+        <section class="private-messages">
+          <form id="private-message-form" action="https://formsubmit.co/ajax/3661b59e797fd66e063eddaff1764ffd" method="post">
+            <label for="private-message">queres agregar algo, mandarme un mensaje, felicitarme, un mensaje de odio o simplemente queres molestar? escribir aca tu mensaje</label>
+            <textarea id="private-message" name="message" rows="6" maxlength="10000" required></textarea>
+            <input class="message-honey" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button type="submit" aria-label="escribir aca tu mensaje"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m3 3 18 9-18 9 4-9-4-9Zm4 9h14"/></svg></button>
+          </form>
+        </section>
         
         
         <div class="directory-sigil" aria-hidden="true"><img class="" src="assets/retro-pentagram-silver.gif" data-motion="assets/retro-pentagram-silver.gif" data-still="assets/retro-pentagram-silver.png" width="100" height="100" alt="" aria-hidden="true"></div><section class="window directory">
@@ -148,8 +160,9 @@
   
   
   <audio id="impala-audio" src="assets/feels-like-we-only-go-backwards.mp3" preload="none" loop></audio>
-  <audio id="wotsa-audio" src="assets/i-know-you-want-me.mp3" preload="none" loop></audio>
+  <audio id="wotsa-audio" src="assets/aionolowmi.mp3" preload="none" loop></audio>
   <div id="wotsa-overlay" class="wotsa-overlay" hidden aria-hidden="true"><img data-src="assets/io-onu-wa-wotsa.gif" width="498" height="264" alt=""></div>
+  <dialog id="time-420-overlay" aria-labelledby="time-420-text" tabindex="-1" closedby="none"><img data-src="assets/420.gif" width="400" height="206" alt=""><p id="time-420-text">QUE HACES A LAS 4:20 AMIGO? PODES ESTAR HACIENDO OTRA COSA MÁS PRODUCTIVA</p></dialog>
   <div id="particles" aria-hidden="true"></div>
   <div id="toast" role="status" aria-live="polite" hidden=""></div>
   <dialog id="weird-dialog" aria-labelledby="dialog-heading"><div class="dialog-bar"><span id="dialog-heading">archivo encontrado</span><div class="dialog-controls"><button id="close-dialog" type="button" aria-label="Cerrar ventana">×</button></div></div><div class="dialog-content" id="dialog-content"></div><button id="dialog-ok" type="button">bueno, me sirve</button></dialog>

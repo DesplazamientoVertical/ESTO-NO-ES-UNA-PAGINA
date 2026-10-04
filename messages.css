@@ -1,0 +1,13 @@
+.private-messages{padding:12px;background:#000 url('assets/retro-black-stone.jpg') repeat;border:4px ridge #aaa;overflow-wrap:anywhere}
+.private-messages label{display:block;color:#fff;font:16px/1.35 'Times New Roman',Times,serif;margin-bottom:12px}
+.private-messages textarea{display:block;width:100%;min-width:0;min-height:150px;resize:vertical;background:#000;color:#fff;border:3px inset #888;border-radius:0;padding:8px;font:16px/1.4 'Courier New',monospace}
+.private-messages textarea:focus-visible{outline:2px solid #f00;outline-offset:2px}
+.private-messages button{display:block;margin:10px 0 0 auto;width:45px;height:40px;padding:7px;background:#000 url('assets/retro-dark-chrome.gif') repeat;border:3px outset #aaa;color:#fff}
+.private-messages button svg{display:block;width:100%;height:100%}
+.private-messages .message-honey{display:none}
+.private-messages form[aria-busy=true] button{cursor:wait}
+.private-messages form[aria-busy=true] button svg{animation:message-wait 1s linear infinite}
+.private-messages form[data-result=sent] button{color:#0f0;border-color:#0f0}
+.private-messages form[data-result=error] button{color:#f00;border-color:#f00}
+.private-messages form[data-result=error] textarea{border-color:#f00}
+@keyframes message-wait{to{transform:rotate(360deg)}}
