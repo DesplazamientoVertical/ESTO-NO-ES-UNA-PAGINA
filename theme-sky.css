@@ -1,4 +1,4 @@
-/* The sky theme is scoped to ordinary page content and releases it during music mode. */
+/* Original archived textures: assets/retro-theme-sources.json. The sky theme releases ordinary page content during music mode. */
 html[data-theme="cielo"] body:not(.impalero){
   --ink:#062568;
   --lime:#062568;
@@ -7,14 +7,14 @@ html[data-theme="cielo"] body:not(.impalero){
   --realm:#0757cb;
   color-scheme:light;
   color:#062568;
-  background:#0767d7 url('assets/theme-sky-clouds.svg') repeat;
+  background:#0767d7 url('assets/retro-sky-clouds.jpg') repeat;
 }
 html[data-theme="cielo"] body:not(.impalero) .acid-background{
-  background:#0767d7 url('assets/theme-sky-clouds.svg') repeat;
+  background:#0767d7 url('assets/retro-sky-clouds.jpg') repeat;
   animation:theme-sky-drift 90s linear infinite;
 }
 html[data-theme="cielo"] body:not(.impalero) :is(.page-shell,.temple-shell){
-  background:#fff url('assets/theme-sky-panel.svg') repeat;
+  background:#fff url('assets/retro-sky-panel.jpg') repeat;
   border:7px ridge #dfbf49;
   outline:2px solid #0350ba;
   outline-offset:2px;
@@ -29,7 +29,7 @@ html[data-theme="cielo"] body:not(.impalero) :where(.page-shell,.temple-shell,#w
 html[data-theme="cielo"] body:not(.impalero) :where(.page-shell,.temple-shell,#weird-dialog) button:not([data-theme-choice]){
   border:3px outset #f1d37b;
   border-radius:0;
-  background:linear-gradient(#fff7be 0%,#e7c044 47%,#c38c16 50%,#ffe684 100%);
+  background:#d3a522 url('assets/retro-sky-gold.jpg') repeat;
   color:#082562;
   text-shadow:1px 1px 0 #fff2b3;
 }
@@ -49,16 +49,15 @@ html[data-theme="cielo"] body:not(.impalero) .topline{
   border-color:#f7db78;
 }
 html[data-theme="cielo"] body:not(.impalero) .masthead{
-  background:#0767d7 url('assets/theme-sky-clouds.svg') repeat;
+  background:#0767d7 url('assets/retro-sky-clouds.jpg') repeat;
   border-block:7px ridge #e5bd36;
   min-height:330px;
   padding-top:31px;
   padding-bottom:39px;
 }
 html[data-theme="cielo"] body:not(.impalero) .masthead:before{
-  display:block;
-  background:url('assets/theme-sky-halo.svg') center 41%/min(650px,100%) auto no-repeat;
-  opacity:.9;
+  display:none;
+  background:none;
 }
 html[data-theme="cielo"] body:not(.impalero) .masthead h1{
   color:#fff;
@@ -84,7 +83,7 @@ html[data-theme="cielo"] body:not(.impalero) .masthead>.blood-divider{
   border-top:2px solid #ffde61;
 }
 html[data-theme="cielo"] body:not(.impalero) .ticker{
-  background:#d3a522 url('assets/theme-sky-gold.svg') repeat;
+  background:#d3a522 url('assets/retro-sky-gold.jpg') repeat;
   color:#092b75;
   border-color:#f9e691;
   text-shadow:1px 1px 0 #fff7cf;
@@ -95,7 +94,7 @@ html[data-theme="cielo"] body:not(.impalero) .main-nav{
 }
 html[data-theme="cielo"] body:not(.impalero) .main-nav :is(a,button){
   color:#082562;
-  background:linear-gradient(#f4fbff,#91bdf5 48%,#4a85da 51%,#cce9ff);
+  background:#80baff url('assets/retro-sky-blue-metal.gif') repeat;
   border:3px outset #d6e8ff;
   text-shadow:1px 1px 0 #fff;
 }
@@ -105,7 +104,7 @@ html[data-theme="cielo"] body:not(.impalero) .main-nav :is(a,button):hover{
   color:#072363;
 }
 html[data-theme="cielo"] body:not(.impalero) .sticker-bomb{
-  background:#c4e5ff url('assets/theme-sky-panel.svg') repeat;
+  background:#c4e5ff url('assets/retro-sky-panel.jpg') repeat;
   border-bottom:6px ridge #d6b538;
 }
 html[data-theme="cielo"] body:not(.impalero) .pasted-sticker{
@@ -120,19 +119,19 @@ html[data-theme="cielo"] body:not(.impalero) .anarchy-tape{
   border-color:#d8af23;
 }
 html[data-theme="cielo"] body:not(.impalero) .columns{
-  background:#eaf8ff url('assets/theme-sky-panel.svg') repeat;
+  background:#eaf8ff url('assets/retro-sky-panel.jpg') repeat;
 }
 html[data-theme="cielo"] body:not(.impalero) :is(.window,.friends-note,.album-note,.sidebar-sticker,.welcome-box,.personal-photo,.odd-gif-grid figure,.gif-shrine,.thanks-note,.friend-altar,.temple-callout,.dont-box,.secret-meter,.fortune-note,.visit-box,.portal-strip,.private-messages){
   color:#062568;
-  background:#f2fbff url('assets/theme-sky-panel.svg') repeat;
+  background:#f2fbff url('assets/retro-sky-panel.jpg') repeat;
   border:5px ridge #d9b33d;
   box-shadow:3px 3px 0 #7da6d4;
 }
 html[data-theme="cielo"] body:not(.impalero) :is(.titlebar,.photo-label,.dialog-bar,.section-heading){
-  background:linear-gradient(#5ba2f4 0%,#075cd1 45%,#063f9b 50%,#2b7bde 100%);
-  color:#fff4b5;
+  background:#80baff url('assets/retro-sky-blue-metal.gif') repeat;
+  color:#052967;
   border-color:#e3c24e;
-  text-shadow:1px 1px 0 #003277;
+  text-shadow:1px 1px 0 #fff;
 }
 html[data-theme="cielo"] body:not(.impalero) .titlebar>span{
   color:#063370;
@@ -145,10 +144,10 @@ html[data-theme="cielo"] body:not(.impalero) :is(.directory .hello,.friends-note
   text-shadow:1px 1px 0 #fff;
 }
 html[data-theme="cielo"] body:not(.impalero) .section-heading h2{
-  color:#fff4b5;
-  text-shadow:1px 1px 0 #003277;
+  color:#052967;
+  text-shadow:1px 1px 0 #fff;
 }
-html[data-theme="cielo"] body:not(.impalero) .section-heading>span{color:#fff}
+html[data-theme="cielo"] body:not(.impalero) .section-heading>span{color:#052967}
 html[data-theme="cielo"] body:not(.impalero) :is(.directory a,.directory button,.album-listen,.lab .text-link,.fortune-note span,.sidebar-sticker span){
   color:#0345bd;
 }
@@ -196,13 +195,13 @@ html[data-theme="cielo"] body:not(.impalero) .new-label{
   border-color:#d5af30;
 }
 html[data-theme="cielo"] body:not(.impalero) .photo-image{
-  background:#d3a522 url('assets/theme-sky-gold.svg') repeat;
+  background:#d3a522 url('assets/retro-sky-gold.jpg') repeat;
 }
 html[data-theme="cielo"] body:not(.impalero) .personal-photo img{
   border-color:#92b9e7;
 }
 html[data-theme="cielo"] body:not(.impalero) .photo-gate{
-  background:#f2fbff url('assets/theme-sky-panel.svg') repeat;
+  background:#f2fbff url('assets/retro-sky-panel.jpg') repeat;
   border-color:#a0c1e9;
   color:#0751be;
 }
@@ -225,7 +224,7 @@ html[data-theme="cielo"] body:not(.impalero) .photo-gate.invalid-code input{
   border-color:#bd1515;
 }
 html[data-theme="cielo"] body:not(.impalero) .sidebar-portrait{
-  background:#d3a522 url('assets/theme-sky-gold.svg') repeat!important;
+  background:#d3a522 url('assets/retro-sky-gold.jpg') repeat!important;
   border:6px ridge #edc443!important;
 }
 html[data-theme="cielo"] body:not(.impalero) .lab output{
@@ -239,7 +238,7 @@ html[data-theme="cielo"] body:not(.impalero) .gif-grid button{
   border-color:#b8cfe9;
 }
 html[data-theme="cielo"] body:not(.impalero) .thanks-note{
-  background:#fff3c4 url('assets/theme-sky-panel.svg') repeat;
+  background:#fff3c4 url('assets/retro-sky-panel.jpg') repeat;
   border-color:#e1b62d;
 }
 html[data-theme="cielo"] body:not(.impalero) .thanks-kicker{color:#9c7010}
@@ -255,7 +254,7 @@ html[data-theme="cielo"] body:not(.impalero) .thanks-note #lucas-button:hover{
   text-shadow:none;
 }
 html[data-theme="cielo"] body:not(.impalero) .friend-altar{
-  background:#effaff url('assets/theme-sky-halo.svg') center 45px/100% auto no-repeat;
+  background:#effaff url('assets/retro-sky-clouds.jpg') repeat;
   border-color:#e1b93a;
   border-top:22px ridge #f2d06b;
 }
@@ -265,7 +264,7 @@ html[data-theme="cielo"] body:not(.impalero) .altar-portrait .brandon-photo{
   box-shadow:3px 3px 0 #9fbae0;
 }
 html[data-theme="cielo"] body:not(.impalero) .temple-callout{
-  background:#0767d7 url('assets/theme-sky-clouds.svg') repeat;
+  background:#0767d7 url('assets/retro-sky-clouds.jpg') repeat;
   border-color:#e8c03d;
 }
 html[data-theme="cielo"] body:not(.impalero) .temple-button{
@@ -280,7 +279,7 @@ html[data-theme="cielo"] body:not(.impalero) .temple-button:hover{
 html[data-theme="cielo"] body:not(.impalero) :is(.error-code,.secret-meter strong){color:#085acb}
 html[data-theme="cielo"] body:not(.impalero) .planet-box{
   color:#062568;
-  background:#eff8ff url('assets/theme-sky-panel.svg') repeat;
+  background:#eff8ff url('assets/retro-sky-panel.jpg') repeat;
   border-color:#d8b74b;
 }
 html[data-theme="cielo"] body:not(.impalero) .dont-box{
@@ -324,7 +323,7 @@ html[data-theme="cielo"] body:not(.impalero) .portal-strip a:hover{
 html[data-theme="cielo"] body:not(.impalero) .portal-strip a:hover span{color:#fff}
 html[data-theme="cielo"] body:not(.impalero) :is(.page-shell,.temple-shell)>footer{
   color:#fff;
-  background:#0767d7 url('assets/theme-sky-clouds.svg') repeat;
+  background:#0767d7 url('assets/retro-sky-clouds.jpg') repeat;
   border-top:7px ridge #dab12f;
 }
 html[data-theme="cielo"] body:not(.impalero) :is(.page-shell,.temple-shell)>footer :is(p,a,button){
@@ -340,17 +339,17 @@ html[data-theme="cielo"] body:not(.impalero) :where(.page-shell,.temple-shell,#w
 }
 html[data-theme="cielo"] body:not(.impalero) :is(.page-shell,.temple-shell)>footer .text-link{color:#fff4bb}
 html[data-theme="cielo"] body:not(.impalero) .impala-control{
-  background:#f2fbff url('assets/theme-sky-panel.svg') repeat;
+  background:#f2fbff url('assets/retro-sky-panel.jpg') repeat;
   border-color:#d5ae2c;
 }
 html[data-theme="cielo"] body:not(.impalero) :is(#impala-button,#wotsa-button){
-  background:linear-gradient(#fff7be,#e7c044 47%,#c38c16 50%,#ffe684);
+  background:#d3a522 url('assets/retro-sky-gold.jpg') repeat;
   color:#052967;
   border-color:#f1d37b;
   text-shadow:1px 1px 0 #fff4bd;
 }
 html[data-theme="cielo"] body:not(.impalero) #weird-dialog{
-  background:#f2fbff url('assets/theme-sky-panel.svg') repeat;
+  background:#f2fbff url('assets/retro-sky-panel.jpg') repeat;
   color:#062568;
   border:6px ridge #ddb53a;
   box-shadow:7px 7px 0 #064096;
@@ -384,16 +383,16 @@ html[data-theme="cielo"] body:not(.impalero) .cursor-blood{
 }
 html[data-theme="cielo"] body:not(.impalero) .cursor-star{color:#ffdf57}
 html[data-theme="cielo"] body.temple-page:not(.impalero){
-  background:#0767d7 url('assets/theme-sky-clouds.svg') repeat;
+  background:#0767d7 url('assets/retro-sky-clouds.jpg') repeat;
 }
 html[data-theme="cielo"] body:not(.impalero) .temple-nav{
-  background:linear-gradient(#80baff,#075cd1 48%,#063f9b 51%,#387fe2);
+  background:#80baff url('assets/retro-sky-blue-metal.gif') repeat;
   border-color:#e3bc3f;
-  color:#fff;
+  color:#052967;
 }
-html[data-theme="cielo"] body:not(.impalero) .temple-nav>a{color:#fff4b5}
+html[data-theme="cielo"] body:not(.impalero) .temple-nav>a{color:#052967}
 html[data-theme="cielo"] body:not(.impalero) .temple-main{
-  background:#f2fbff url('assets/theme-sky-panel.svg') repeat;
+  background:#f2fbff url('assets/retro-sky-panel.jpg') repeat;
   color:#062568;
 }
 html[data-theme="cielo"] body:not(.impalero) .temple-eyebrow{color:#052b75}
@@ -402,7 +401,7 @@ html[data-theme="cielo"] body:not(.impalero) .temple-main h1{
   text-shadow:2px 2px 0 #d5b145;
 }
 html[data-theme="cielo"] body:not(.impalero) .baphomet-center{
-  background:#0767d7 url('assets/theme-sky-clouds.svg') repeat;
+  background:#0767d7 url('assets/retro-sky-clouds.jpg') repeat;
   border-color:#e3bc3f;
   border-top-color:#ffdd69;
   box-shadow:4px 4px 0 #74a0d6;
@@ -427,7 +426,7 @@ html[data-theme="cielo"] body:not(.impalero) :is(.blood-edge,.blood-edge i){
 html[data-theme="cielo"] body:not(.impalero) .blood-edge i{border-radius:0}
 @keyframes theme-sky-drift{
   from{background-position:0 0}
-  to{background-position:640px 0}
+  to{background-position:315px 0}
 }
 @media(max-width:800px){
   html[data-theme="cielo"] body:not(.impalero) .masthead{min-height:285px}
@@ -438,9 +437,6 @@ html[data-theme="cielo"] body:not(.impalero) .blood-edge i{border-radius:0}
     min-height:0;
     padding:25px 9px 36px;
     border-block-width:5px;
-  }
-  html[data-theme="cielo"] body:not(.impalero) .masthead:before{
-    background-size:470px auto;
   }
   html[data-theme="cielo"] body:not(.impalero) :is(.window,.friends-note,.album-note,.sidebar-sticker,.welcome-box,.personal-photo,.odd-gif-grid figure,.gif-shrine,.thanks-note,.friend-altar,.temple-callout,.dont-box,.secret-meter,.fortune-note,.visit-box,.portal-strip,.private-messages){border-width:4px}
   html[data-theme="cielo"] body:not(.impalero) .friend-altar{border-top-width:16px}
