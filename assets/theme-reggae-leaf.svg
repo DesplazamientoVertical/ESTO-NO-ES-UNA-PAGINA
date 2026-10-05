@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <defs>
+    <g id="blade" fill="#158c32" stroke="#08220b" stroke-width="1.5" stroke-linejoin="round">
+      <path d="M0 0-8-13-5-14-14-26-10-27-19-41-14-40-20-56-15-53-17-70-12-66-12-84-7-80 0-112 7-80 12-84 12-66 17-70 15-53 20-56 14-40 19-41 10-27 14-26 5-14 8-13Z"/>
+      <path d="M0-5V-97M0-22-8-33M0-40-10-54M0-60-8-75M0-22 8-33M0-40 10-54M0-60 8-75" fill="none" stroke="#e0bf35" stroke-width="1.5"/>
+    </g>
+  </defs>
+  <g transform="translate(90 137)">
+    <use href="#blade" transform="rotate(-82) scale(.52)"/>
+    <use href="#blade" transform="rotate(82) scale(.52)"/>
+    <use href="#blade" transform="rotate(-55) scale(.76)"/>
+    <use href="#blade" transform="rotate(55) scale(.76)"/>
+    <use href="#blade" transform="rotate(-28) scale(.94)"/>
+    <use href="#blade" transform="rotate(28) scale(.94)"/>
+    <use href="#blade" transform="scale(1.12)"/>
+    <path d="M0-5 2 31-3 33-4-4" fill="#158c32" stroke="#08220b" stroke-width="1.5"/>
+  </g>
+</svg>

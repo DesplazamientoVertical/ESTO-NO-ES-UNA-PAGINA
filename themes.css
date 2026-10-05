@@ -1,0 +1,13 @@
+.theme-switcher{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:5px;padding:6px 10px;background:#000 url('assets/retro-dark-chrome.gif') repeat;border-bottom:3px ridge #888}
+.theme-switcher button{min-height:38px;min-width:80px;padding:5px 12px;font:bold 16px 'Times New Roman',Times,serif;border:3px outset #aaa;background:#000;color:#fff;text-shadow:none}
+.theme-switcher button[data-theme-choice=oscuro]{min-width:44px;font-size:22px;line-height:1}
+.theme-switcher button[aria-pressed=true]{border-style:inset;border-color:#f00;color:#f00}
+.theme-switcher button:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+html[data-theme=cielo] body:not(.impalero) .theme-switcher{background:#1075d9;border-color:#fff3a6}
+html[data-theme=cielo] body:not(.impalero) .theme-switcher button{background:#fef9da;color:#003e96;border-color:#ffe581}
+html[data-theme=cielo] body:not(.impalero) .theme-switcher button[aria-pressed=true]{background:#ffe067;border-color:#0057ba;color:#00265f}
+html[data-theme=reggae] body:not(.impalero) .theme-switcher{background:#071c09;border-image:linear-gradient(90deg,#d91913 0 33.3%,#ffdb19 33.3% 66.6%,#138b20 66.6%) 1}
+html[data-theme=reggae] body:not(.impalero) .theme-switcher button{background:#05220b;color:#ffdd22;border-color:#b91b16 #d8b729 #0c761d #d8b729}
+html[data-theme=reggae] body:not(.impalero) .theme-switcher button[aria-pressed=true]{background:#ffd320;color:#06360c;border-color:#ea1e17 #078121}
+.temple-page .theme-switcher{border-top:3px ridge #888}
+@media(max-width:560px){.theme-switcher{padding:6px;justify-content:center}.theme-switcher button{min-height:44px;flex:1 0 80px;max-width:150px}.theme-switcher button[data-theme-choice=oscuro]{flex:0 0 44px}}

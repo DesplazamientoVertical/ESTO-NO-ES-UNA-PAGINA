@@ -1,0 +1,451 @@
+/* The sky theme is scoped to ordinary page content and releases it during music mode. */
+html[data-theme="cielo"] body:not(.impalero){
+  --ink:#062568;
+  --lime:#062568;
+  --pink:#064bc0;
+  --cyan:#064bc0;
+  --realm:#0757cb;
+  color-scheme:light;
+  color:#062568;
+  background:#0767d7 url('assets/theme-sky-clouds.svg') repeat;
+}
+html[data-theme="cielo"] body:not(.impalero) .acid-background{
+  background:#0767d7 url('assets/theme-sky-clouds.svg') repeat;
+  animation:theme-sky-drift 90s linear infinite;
+}
+html[data-theme="cielo"] body:not(.impalero) :is(.page-shell,.temple-shell){
+  background:#fff url('assets/theme-sky-panel.svg') repeat;
+  border:7px ridge #dfbf49;
+  outline:2px solid #0350ba;
+  outline-offset:2px;
+  box-shadow:7px 7px 0 #003a94;
+}
+html[data-theme="cielo"] body:not(.impalero) :where(.page-shell,.temple-shell,#weird-dialog) a{
+  color:#043cbb;
+}
+html[data-theme="cielo"] body:not(.impalero) :where(.page-shell,.temple-shell,#weird-dialog) a:hover{
+  color:#a55c00;
+}
+html[data-theme="cielo"] body:not(.impalero) :where(.page-shell,.temple-shell,#weird-dialog) button:not([data-theme-choice]){
+  border:3px outset #f1d37b;
+  border-radius:0;
+  background:linear-gradient(#fff7be 0%,#e7c044 47%,#c38c16 50%,#ffe684 100%);
+  color:#082562;
+  text-shadow:1px 1px 0 #fff2b3;
+}
+html[data-theme="cielo"] body:not(.impalero) :where(.page-shell,.temple-shell,#weird-dialog) button:not([data-theme-choice]):hover,
+html[data-theme="cielo"] body:not(.impalero) :where(.page-shell,.temple-shell,#weird-dialog) button:not([data-theme-choice])[aria-pressed="true"]{
+  background:#0a57c8;
+  border-color:#c6e3ff;
+  color:#fff;
+  text-shadow:1px 1px 0 #003078;
+}
+html[data-theme="cielo"] body:not(.impalero) :where(.page-shell,.temple-shell,#weird-dialog) :is(button,a,input,textarea,select):focus-visible{
+  outline-color:#0345c0;
+}
+html[data-theme="cielo"] body:not(.impalero) .topline{
+  background:#073f9b;
+  color:#fff4bb;
+  border-color:#f7db78;
+}
+html[data-theme="cielo"] body:not(.impalero) .masthead{
+  background:#0767d7 url('assets/theme-sky-clouds.svg') repeat;
+  border-block:7px ridge #e5bd36;
+  min-height:330px;
+  padding-top:31px;
+  padding-bottom:39px;
+}
+html[data-theme="cielo"] body:not(.impalero) .masthead:before{
+  display:block;
+  background:url('assets/theme-sky-halo.svg') center 41%/min(650px,100%) auto no-repeat;
+  opacity:.9;
+}
+html[data-theme="cielo"] body:not(.impalero) .masthead h1{
+  color:#fff;
+  text-shadow:3px 3px 0 #0043a4,5px 5px 0 #cf9c1d;
+  letter-spacing:-1px;
+}
+html[data-theme="cielo"] body:not(.impalero) .masthead h1 span+span{
+  color:#fff3ac;
+  text-shadow:3px 3px 0 #0043a4;
+}
+html[data-theme="cielo"] body:not(.impalero) :is(.tiny-welcome,.masthead-bottom,.masthead-bottom strong){
+  color:#fff;
+  text-shadow:1px 1px 0 #0043a4;
+}
+html[data-theme="cielo"] body:not(.impalero) :is(.header-stars,.header-sigil){color:#ffdf57}
+html[data-theme="cielo"] body:not(.impalero) .masthead-sticker{
+  background:#fffbdc;
+  color:#0649ba;
+  border-color:#d6ae2d;
+  box-shadow:2px 2px 0 #003e95;
+}
+html[data-theme="cielo"] body:not(.impalero) .masthead>.blood-divider{
+  border-top:2px solid #ffde61;
+}
+html[data-theme="cielo"] body:not(.impalero) .ticker{
+  background:#d3a522 url('assets/theme-sky-gold.svg') repeat;
+  color:#092b75;
+  border-color:#f9e691;
+  text-shadow:1px 1px 0 #fff7cf;
+}
+html[data-theme="cielo"] body:not(.impalero) .main-nav{
+  background:#164ca9;
+  border-color:#d6b538;
+}
+html[data-theme="cielo"] body:not(.impalero) .main-nav :is(a,button){
+  color:#082562;
+  background:linear-gradient(#f4fbff,#91bdf5 48%,#4a85da 51%,#cce9ff);
+  border:3px outset #d6e8ff;
+  text-shadow:1px 1px 0 #fff;
+}
+html[data-theme="cielo"] body:not(.impalero) .main-nav :is(a,button):hover{
+  background:#e7c044;
+  border-color:#fff0a9;
+  color:#072363;
+}
+html[data-theme="cielo"] body:not(.impalero) .sticker-bomb{
+  background:#c4e5ff url('assets/theme-sky-panel.svg') repeat;
+  border-bottom:6px ridge #d6b538;
+}
+html[data-theme="cielo"] body:not(.impalero) .pasted-sticker{
+  background:#fff;
+  color:#043cbb;
+  border:3px outset #99bde7;
+  box-shadow:2px 2px 0 #719ed5;
+}
+html[data-theme="cielo"] body:not(.impalero) .anarchy-tape{
+  background:#ffeda0;
+  color:#062568;
+  border-color:#d8af23;
+}
+html[data-theme="cielo"] body:not(.impalero) .columns{
+  background:#eaf8ff url('assets/theme-sky-panel.svg') repeat;
+}
+html[data-theme="cielo"] body:not(.impalero) :is(.window,.friends-note,.album-note,.sidebar-sticker,.welcome-box,.personal-photo,.odd-gif-grid figure,.gif-shrine,.thanks-note,.friend-altar,.temple-callout,.dont-box,.secret-meter,.fortune-note,.visit-box,.portal-strip,.private-messages){
+  color:#062568;
+  background:#f2fbff url('assets/theme-sky-panel.svg') repeat;
+  border:5px ridge #d9b33d;
+  box-shadow:3px 3px 0 #7da6d4;
+}
+html[data-theme="cielo"] body:not(.impalero) :is(.titlebar,.photo-label,.dialog-bar,.section-heading){
+  background:linear-gradient(#5ba2f4 0%,#075cd1 45%,#063f9b 50%,#2b7bde 100%);
+  color:#fff4b5;
+  border-color:#e3c24e;
+  text-shadow:1px 1px 0 #003277;
+}
+html[data-theme="cielo"] body:not(.impalero) .titlebar>span{
+  color:#063370;
+  background:#e0efff;
+  border-color:#f5dc7c;
+  text-shadow:none;
+}
+html[data-theme="cielo"] body:not(.impalero) :is(.directory .hello,.friends-note h2,.album-note h2,.section-heading h2,.gif-shrine h2,.thanks-note h2,.friend-altar h2,.portal-strip h2){
+  color:#063caa;
+  text-shadow:1px 1px 0 #fff;
+}
+html[data-theme="cielo"] body:not(.impalero) .section-heading h2{
+  color:#fff4b5;
+  text-shadow:1px 1px 0 #003277;
+}
+html[data-theme="cielo"] body:not(.impalero) .section-heading>span{color:#fff}
+html[data-theme="cielo"] body:not(.impalero) :is(.directory a,.directory button,.album-listen,.lab .text-link,.fortune-note span,.sidebar-sticker span){
+  color:#0345bd;
+}
+html[data-theme="cielo"] body:not(.impalero) :is(.small-note,.waving,.welcome-kicker,.welcome-bottom,.footer-end){
+  color:#284d8b;
+}
+html[data-theme="cielo"] body:not(.impalero) :is(.friends-note p,.album-note p,.personal-photo figcaption,.odd-gif-grid figcaption,.gif-shrine>p,.thanks-note>p,.brandon-dedication,.warning-box p,.dont-box p,.dont-box small,.fortune-note p,.visit-box,.portal-strip>p){
+  color:#062568;
+}
+html[data-theme="cielo"] body:not(.impalero) :is(.directory hr,.welcome-bottom,.thanks-signoff,.altar-hearts,.album-listen,.retro-bat-box){
+  border-color:#b69027;
+}
+html[data-theme="cielo"] body:not(.impalero) .friends-note:before{
+  background:#f2fbff;
+  color:#b38314;
+}
+html[data-theme="cielo"] body:not(.impalero) :is(.friends-stars,.thanks-doodles,.altar-hearts,.welcome-bottom>span:last-child){
+  color:#9c7010;
+}
+html[data-theme="cielo"] body:not(.impalero) .album-cover{
+  background:#f3df92;
+  border:5px ridge #ddb736;
+}
+html[data-theme="cielo"] body:not(.impalero) .under-construction{
+  background:#fff4b7;
+  color:#053aa2;
+  border-color:#c49e23;
+}
+html[data-theme="cielo"] body:not(.impalero) .web-badge{
+  color:#fff4b5;
+  background:#0752bd;
+  border-color:#efce57;
+}
+html[data-theme="cielo"] body:not(.impalero) .welcome-box{
+  border-left:8px ridge #edc443;
+}
+html[data-theme="cielo"] body:not(.impalero) .welcome-box h2{
+  color:#063caa;
+  text-shadow:2px 2px 0 #cde7ff;
+}
+html[data-theme="cielo"] body:not(.impalero) .welcome-box h2 em{color:#946206}
+html[data-theme="cielo"] body:not(.impalero) .new-label{
+  color:#063caa;
+  background:#fff0a4;
+  border-color:#d5af30;
+}
+html[data-theme="cielo"] body:not(.impalero) .photo-image{
+  background:#d3a522 url('assets/theme-sky-gold.svg') repeat;
+}
+html[data-theme="cielo"] body:not(.impalero) .personal-photo img{
+  border-color:#92b9e7;
+}
+html[data-theme="cielo"] body:not(.impalero) .photo-gate{
+  background:#f2fbff url('assets/theme-sky-panel.svg') repeat;
+  border-color:#a0c1e9;
+  color:#0751be;
+}
+html[data-theme="cielo"] body:not(.impalero) .photo-lock{color:#0751be}
+html[data-theme="cielo"] body:not(.impalero) :is(.photo-code-row input,.private-messages textarea){
+  color:#052967;
+  background:#fff;
+  border:3px inset #9fbee3;
+}
+html[data-theme="cielo"] body:not(.impalero) .private-messages label{color:#062568}
+html[data-theme="cielo"] body:not(.impalero) .private-messages textarea:focus-visible{
+  outline-color:#0757cb;
+}
+html[data-theme="cielo"] body:not(.impalero) .private-messages form[data-result="sent"] button{
+  color:#006327;
+  border-color:#078c37;
+}
+html[data-theme="cielo"] body:not(.impalero) .private-messages form[data-result="error"] :is(button,textarea),
+html[data-theme="cielo"] body:not(.impalero) .photo-gate.invalid-code input{
+  border-color:#bd1515;
+}
+html[data-theme="cielo"] body:not(.impalero) .sidebar-portrait{
+  background:#d3a522 url('assets/theme-sky-gold.svg') repeat!important;
+  border:6px ridge #edc443!important;
+}
+html[data-theme="cielo"] body:not(.impalero) .lab output{
+  background:#fff;
+  color:#052b75;
+  border-color:#a5c3e9;
+}
+html[data-theme="cielo"] body:not(.impalero) .gif-grid button{
+  color:#043cbb;
+  background:#e4f4ff;
+  border-color:#b8cfe9;
+}
+html[data-theme="cielo"] body:not(.impalero) .thanks-note{
+  background:#fff3c4 url('assets/theme-sky-panel.svg') repeat;
+  border-color:#e1b62d;
+}
+html[data-theme="cielo"] body:not(.impalero) .thanks-kicker{color:#9c7010}
+html[data-theme="cielo"] body:not(.impalero) .thanks-note #lucas-button{
+  background:#0957c4;
+  color:#fff4bb;
+  border-color:#f2cf61;
+  text-shadow:1px 1px 0 #003177;
+}
+html[data-theme="cielo"] body:not(.impalero) .thanks-note #lucas-button:hover{
+  background:#e6b92e;
+  color:#052967;
+  text-shadow:none;
+}
+html[data-theme="cielo"] body:not(.impalero) .friend-altar{
+  background:#effaff url('assets/theme-sky-halo.svg') center 45px/100% auto no-repeat;
+  border-color:#e1b93a;
+  border-top:22px ridge #f2d06b;
+}
+html[data-theme="cielo"] body:not(.impalero) .altar-label{color:#936a16}
+html[data-theme="cielo"] body:not(.impalero) .altar-portrait .brandon-photo{
+  border-color:#e0b333;
+  box-shadow:3px 3px 0 #9fbae0;
+}
+html[data-theme="cielo"] body:not(.impalero) .temple-callout{
+  background:#0767d7 url('assets/theme-sky-clouds.svg') repeat;
+  border-color:#e8c03d;
+}
+html[data-theme="cielo"] body:not(.impalero) .temple-button{
+  background:#fff9d7;
+  color:#053aa2;
+  border-color:#e8c75d;
+}
+html[data-theme="cielo"] body:not(.impalero) .temple-button:hover{
+  background:#e9c346;
+  color:#052967;
+}
+html[data-theme="cielo"] body:not(.impalero) :is(.error-code,.secret-meter strong){color:#085acb}
+html[data-theme="cielo"] body:not(.impalero) .planet-box{
+  color:#062568;
+  background:#eff8ff url('assets/theme-sky-panel.svg') repeat;
+  border-color:#d8b74b;
+}
+html[data-theme="cielo"] body:not(.impalero) .dont-box{
+  border-color:#d8b74b;
+}
+html[data-theme="cielo"] body:not(.impalero) .dont-box button{
+  border:5px outset #f1ce58;
+  border-radius:0;
+  background:#075bd0;
+  color:#fff4b5;
+  box-shadow:3px 3px 0 #7c9fce;
+}
+html[data-theme="cielo"] body:not(.impalero) .secret-dots i{
+  border-color:#8eaee0;
+  background:#e6f4ff;
+}
+html[data-theme="cielo"] body:not(.impalero) .secret-dots i.found{
+  background:#dcb435;
+  border-color:#fff1b8;
+}
+html[data-theme="cielo"] body:not(.impalero) .fortune-note:before{
+  background:#e7c74c;
+  border-color:#b18b1e;
+}
+html[data-theme="cielo"] body:not(.impalero) .visit-box strong{
+  color:#ffef9c;
+  background:#053c99;
+  border-color:#9fb6da;
+}
+html[data-theme="cielo"] body:not(.impalero) .portal-strip :is(a,a span){
+  color:#063caa;
+}
+html[data-theme="cielo"] body:not(.impalero) .portal-strip a{
+  background:#fff4c3;
+  border-color:#ddb942;
+}
+html[data-theme="cielo"] body:not(.impalero) .portal-strip a:hover{
+  background:#0a57c8;
+  color:#fff;
+}
+html[data-theme="cielo"] body:not(.impalero) .portal-strip a:hover span{color:#fff}
+html[data-theme="cielo"] body:not(.impalero) :is(.page-shell,.temple-shell)>footer{
+  color:#fff;
+  background:#0767d7 url('assets/theme-sky-clouds.svg') repeat;
+  border-top:7px ridge #dab12f;
+}
+html[data-theme="cielo"] body:not(.impalero) :is(.page-shell,.temple-shell)>footer :is(p,a,button){
+  color:#fff4bb;
+  text-shadow:1px 1px 0 #003277;
+}
+html[data-theme="cielo"] body:not(.impalero) :is(.page-shell,.temple-shell)>footer .footer-row span{color:#fff}
+html[data-theme="cielo"] body:not(.impalero) :where(.page-shell,.temple-shell,#weird-dialog) .text-link{
+  background:none;
+  border:0;
+  color:#0647b7;
+  text-shadow:none;
+}
+html[data-theme="cielo"] body:not(.impalero) :is(.page-shell,.temple-shell)>footer .text-link{color:#fff4bb}
+html[data-theme="cielo"] body:not(.impalero) .impala-control{
+  background:#f2fbff url('assets/theme-sky-panel.svg') repeat;
+  border-color:#d5ae2c;
+}
+html[data-theme="cielo"] body:not(.impalero) :is(#impala-button,#wotsa-button){
+  background:linear-gradient(#fff7be,#e7c044 47%,#c38c16 50%,#ffe684);
+  color:#052967;
+  border-color:#f1d37b;
+  text-shadow:1px 1px 0 #fff4bd;
+}
+html[data-theme="cielo"] body:not(.impalero) #weird-dialog{
+  background:#f2fbff url('assets/theme-sky-panel.svg') repeat;
+  color:#062568;
+  border:6px ridge #ddb53a;
+  box-shadow:7px 7px 0 #064096;
+}
+html[data-theme="cielo"] body:not(.impalero) #weird-dialog::backdrop{
+  background:rgb(5 43 119 / 65%);
+}
+html[data-theme="cielo"] body:not(.impalero) #weird-dialog :is(.dialog-content h2,.secret-symbol){
+  color:#0642b2;
+  text-shadow:none;
+}
+html[data-theme="cielo"] body:not(.impalero) #weird-dialog .secret-hint{
+  color:#062568;
+  background:#fff8d7;
+  border-color:#bca44d;
+}
+html[data-theme="cielo"] body:not(.impalero) #weird-dialog .lucas-surprise img{
+  border-color:#d4ac31;
+}
+html[data-theme="cielo"] body:not(.impalero) #toast{
+  background:#fff6bd;
+  color:#052b75;
+  border-color:#d8b74b;
+  box-shadow:3px 3px 0 #003e95;
+}
+html[data-theme="cielo"] body:not(.impalero) .cursor-blood{
+  height:var(--drop-size);
+  background-color:#ffe053!important;
+  border-radius:0;
+  clip-path:polygon(50% 0,61% 37%,100% 50%,61% 61%,50% 100%,37% 61%,0 50%,37% 37%);
+}
+html[data-theme="cielo"] body:not(.impalero) .cursor-star{color:#ffdf57}
+html[data-theme="cielo"] body.temple-page:not(.impalero){
+  background:#0767d7 url('assets/theme-sky-clouds.svg') repeat;
+}
+html[data-theme="cielo"] body:not(.impalero) .temple-nav{
+  background:linear-gradient(#80baff,#075cd1 48%,#063f9b 51%,#387fe2);
+  border-color:#e3bc3f;
+  color:#fff;
+}
+html[data-theme="cielo"] body:not(.impalero) .temple-nav>a{color:#fff4b5}
+html[data-theme="cielo"] body:not(.impalero) .temple-main{
+  background:#f2fbff url('assets/theme-sky-panel.svg') repeat;
+  color:#062568;
+}
+html[data-theme="cielo"] body:not(.impalero) .temple-eyebrow{color:#052b75}
+html[data-theme="cielo"] body:not(.impalero) .temple-main h1{
+  color:#0549bd;
+  text-shadow:2px 2px 0 #d5b145;
+}
+html[data-theme="cielo"] body:not(.impalero) .baphomet-center{
+  background:#0767d7 url('assets/theme-sky-clouds.svg') repeat;
+  border-color:#e3bc3f;
+  border-top-color:#ffdd69;
+  box-shadow:4px 4px 0 #74a0d6;
+}
+html[data-theme="cielo"] body:not(.impalero) .baphomet-center figcaption{
+  color:#fff4b5;
+  text-shadow:1px 1px 0 #003277;
+}
+html[data-theme="cielo"] body:not(.impalero) .temple-sigils{color:#b38513}
+html[data-theme="cielo"] body:not(.impalero) .temple-exit{
+  background:#fff0a4;
+  border-color:#e5bb39;
+  color:#053aa2;
+}
+html[data-theme="cielo"] body:not(.impalero) .temple-exit:hover{
+  background:#0756c4;
+  color:#fff;
+}
+html[data-theme="cielo"] body:not(.impalero) :is(.blood-edge,.blood-edge i){
+  background:#ffe053;
+}
+html[data-theme="cielo"] body:not(.impalero) .blood-edge i{border-radius:0}
+@keyframes theme-sky-drift{
+  from{background-position:0 0}
+  to{background-position:640px 0}
+}
+@media(max-width:800px){
+  html[data-theme="cielo"] body:not(.impalero) .masthead{min-height:285px}
+}
+@media(max-width:560px){
+  html[data-theme="cielo"] body:not(.impalero) :is(.page-shell,.temple-shell){border-width:4px}
+  html[data-theme="cielo"] body:not(.impalero) .masthead{
+    min-height:0;
+    padding:25px 9px 36px;
+    border-block-width:5px;
+  }
+  html[data-theme="cielo"] body:not(.impalero) .masthead:before{
+    background-size:470px auto;
+  }
+  html[data-theme="cielo"] body:not(.impalero) :is(.window,.friends-note,.album-note,.sidebar-sticker,.welcome-box,.personal-photo,.odd-gif-grid figure,.gif-shrine,.thanks-note,.friend-altar,.temple-callout,.dont-box,.secret-meter,.fortune-note,.visit-box,.portal-strip,.private-messages){border-width:4px}
+  html[data-theme="cielo"] body:not(.impalero) .friend-altar{border-top-width:16px}
+  html[data-theme="cielo"] body:not(.impalero) .temple-main h1{font-size:35px}
+}
+@media(prefers-reduced-motion:reduce){
+  html[data-theme="cielo"] body:not(.impalero) .acid-background{animation:none}
+}

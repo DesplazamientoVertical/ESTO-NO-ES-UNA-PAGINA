@@ -1,0 +1,297 @@
+/* Original geometric cannabis and woven-cloth SVGs; no added visible copy. */
+html[data-theme="reggae"] body:not(.impalero) {
+  color: #fff4b9;
+  background: #050b05 url('assets/theme-reggae-wall.svg') repeat;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+html[data-theme="reggae"] body:not(.impalero) .acid-background {
+  background: #050b05 url('assets/theme-reggae-wall.svg') repeat;
+}
+
+html[data-theme="reggae"] body:not(.impalero) .page-shell {
+  background: #071b0c url('assets/theme-reggae-weave.svg') repeat;
+  border: 7px ridge #e7ba21;
+  outline: 3px solid #b82317;
+  outline-offset: 2px;
+  box-shadow: 7px 7px 0 #000;
+}
+
+html[data-theme="reggae"] body:not(.impalero) .topline {
+  background: #ecd026;
+  color: #081608;
+  border-bottom: 5px groove #278c32;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+html[data-theme="reggae"] body:not(.impalero) .masthead {
+  background: #061009;
+  border-top: 9px ridge #c92d19;
+  border-bottom: 9px ridge #e8c52a;
+  box-shadow: inset 0 0 0 4px #21792c;
+}
+
+html[data-theme="reggae"] body:not(.impalero) .masthead::before {
+  display: block;
+  background: url('assets/theme-reggae-leaf.svg') 4% 38% / 150px 150px no-repeat,
+    url('assets/theme-reggae-leaf.svg') 96% 38% / 150px 150px no-repeat,
+    url('assets/theme-reggae-wall.svg') center / 192px 192px repeat;
+  opacity: .46;
+}
+
+html[data-theme="reggae"] body:not(.impalero) .masthead h1 {
+  color: #ffe02b;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 900;
+  text-shadow: 2px 2px 0 #061307, 4px 4px 0 #b72616;
+}
+
+html[data-theme="reggae"] body:not(.impalero) .masthead h1 span + span {
+  color: #49bd3b;
+  text-shadow: 2px 2px 0 #020902, 4px 4px 0 #b52616;
+}
+
+html[data-theme="reggae"] body:not(.impalero) :is(.tiny-welcome, .masthead-bottom, .masthead-bottom strong) {
+  color: #fff3b5;
+  text-shadow: 1px 1px #000;
+}
+
+html[data-theme="reggae"] body:not(.impalero) :is(.header-stars, .friends-stars, .thanks-doodles, .altar-hearts) {
+  color: #f7d02c;
+}
+
+html[data-theme="reggae"] body:not(.impalero) .sticker-bomb {
+  background: #0a3214 url('assets/theme-reggae-weave.svg') repeat;
+  border-bottom: 7px ridge #258536;
+}
+
+html[data-theme="reggae"] body:not(.impalero) .pasted-sticker {
+  color: #f6da36;
+  background: #081408;
+  border: 3px outset #deb928;
+  box-shadow: 3px 3px 0 #020802;
+}
+
+html[data-theme="reggae"] body:not(.impalero) .pasted-sticker:nth-child(3n + 2) { border-color: #bd3020; }
+html[data-theme="reggae"] body:not(.impalero) .pasted-sticker:nth-child(3n) { border-color: #298d39; }
+html[data-theme="reggae"] body:not(.impalero) .pasted-sticker span { font-family: 'Courier New', Courier, monospace; }
+html[data-theme="reggae"] body:not(.impalero) .anarchy-tape { color: #ffe04a; background: #8e2017; border-color: #e3bc25; }
+
+html[data-theme="reggae"] body:not(.impalero) .columns {
+  background: #050b05 url('assets/theme-reggae-wall.svg') repeat;
+}
+
+html[data-theme="reggae"] body:not(.impalero) :is(.window, .friends-note, .album-note, .sidebar-sticker, .personal-photo, .odd-gif-grid figure, .gif-shrine, .friend-altar, .temple-callout, .dont-box, .secret-meter, .fortune-note, .visit-box, .portal-strip, .private-messages, .impala-control) {
+  color: #fff4b9;
+  background: #071b0c url('assets/theme-reggae-weave.svg') repeat;
+  border: 5px ridge #2b8f35;
+  box-shadow: 4px 4px 0 #000;
+}
+
+html[data-theme="reggae"] body:not(.impalero) :is(.titlebar, .photo-label) {
+  color: #ffe64b;
+  background: #902014;
+  border-bottom: 4px ridge #dfb42b;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #000;
+}
+
+html[data-theme="reggae"] body:not(.impalero) .titlebar > span {
+  background: #e4bf29;
+  color: #09220b;
+  border-color: #f9e481;
+}
+
+html[data-theme="reggae"] body:not(.impalero) :is(.directory .hello, .friends-note h2, .album-note h2, .gif-shrine h2, .portal-strip h2, .secret-meter strong, .visit-box strong) {
+  color: #ffe03b;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 2px 2px 0 #000;
+}
+
+html[data-theme="reggae"] body:not(.impalero) :is(.directory a, .directory button, .album-listen, .footer-row a, .footer-row button, .temple-nav > a) {
+  color: #ffe03b;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+html[data-theme="reggae"] body:not(.impalero) :is(.directory a:hover, .album-listen:hover, .footer-row a:hover, .footer-row button:hover) { color: #83e25e; }
+html[data-theme="reggae"] body:not(.impalero) :is(.directory hr, .album-listen, .welcome-bottom, .altar-hearts, .retro-bat-box) { border-color: #d8b726; }
+html[data-theme="reggae"] body:not(.impalero) :is(.small-note, .waving, .sidebar-sticker span, .altar-label, .brandon-dedication, .album-note p, .friends-note p, .personal-photo figcaption, .odd-gif-grid figcaption, .portal-strip > p) { color: #fff4b9; }
+
+html[data-theme="reggae"] body:not(.impalero) .welcome-box {
+  color: #071508;
+  background: #eac62b url('assets/theme-reggae-leaf.svg') right 10px top 10px / 74px 74px no-repeat;
+  border: 6px ridge #248132;
+  border-left: 10px ridge #ba2b19;
+  box-shadow: 5px 5px 0 #000;
+}
+
+html[data-theme="reggae"] body:not(.impalero) .welcome-kicker {
+  padding-right: 68px;
+  color: #143b16;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+html[data-theme="reggae"] body:not(.impalero) .welcome-box h2 {
+  color: #0b441d;
+  text-shadow: 1px 1px 0 #fff17a;
+}
+
+html[data-theme="reggae"] body:not(.impalero) .welcome-box h2 em { color: #962516; }
+html[data-theme="reggae"] body:not(.impalero) :is(.welcome-box .personal-intro, .welcome-bottom, .welcome-bottom > span:last-child) { color: #122109; }
+html[data-theme="reggae"] body:not(.impalero) .welcome-bottom { border-color: #46842c; }
+html[data-theme="reggae"] body:not(.impalero) .photo-plaza { border-color: #d9b622; }
+html[data-theme="reggae"] body:not(.impalero) .photo-plaza .photo-label { color: #071b0c; background: #e3c22a; border-color: #269b3f; text-shadow: none; }
+html[data-theme="reggae"] body:not(.impalero) .photo-image { background: #061108; }
+html[data-theme="reggae"] body:not(.impalero) :is(.personal-photo img, .altar-portrait .brandon-photo, .album-cover) { border-color: #dcbf32; }
+
+html[data-theme="reggae"] body:not(.impalero) .section-heading {
+  color: #ffe744;
+  background: #8e2116;
+  border: 5px ridge #e1ba28;
+  border-bottom-color: #259037;
+}
+
+html[data-theme="reggae"] body:not(.impalero) .section-heading h2 { color: #ffe744; }
+html[data-theme="reggae"] body:not(.impalero) .section-heading > span { color: #fff4b9; }
+html[data-theme="reggae"] body:not(.impalero) .odd-gif-grid figure:nth-child(2n) { border-color: #ddbb2a; }
+html[data-theme="reggae"] body:not(.impalero) .odd-gif-grid figure:nth-child(3n) { border-color: #b42b1d; }
+html[data-theme="reggae"] body:not(.impalero) .odd-gif-grid figcaption { font-family: 'Courier New', Courier, monospace; }
+
+html[data-theme="reggae"] body:not(.impalero) .thanks-note {
+  color: #fff7cd;
+  background: #871c13 url('assets/theme-reggae-leaf.svg') right 6px bottom 7px / 85px 85px no-repeat;
+  border: 6px ridge #dcb522;
+  box-shadow: 5px 5px 0 #071b0c;
+}
+
+html[data-theme="reggae"] body:not(.impalero) :is(.thanks-kicker, .thanks-note > p:not(.thanks-kicker)) { color: #fff4b9; }
+html[data-theme="reggae"] body:not(.impalero) .thanks-note h2 { color: #ffe24b; text-shadow: 2px 2px 0 #12390d; }
+html[data-theme="reggae"] body:not(.impalero) .thanks-signoff { border-color: #e1b724; }
+html[data-theme="reggae"] body:not(.impalero) .thanks-doodles { padding-right: 65px; }
+
+html[data-theme="reggae"] body:not(.impalero) .friend-altar {
+  background: url('assets/theme-reggae-leaf.svg') 10px 12px / 74px 74px no-repeat,
+    url('assets/theme-reggae-leaf.svg') right 10px top 12px / 74px 74px no-repeat,
+    #071b0c url('assets/theme-reggae-weave.svg') repeat;
+  border: 7px ridge #daba28;
+  border-top: 18px ridge #b12d19;
+}
+
+html[data-theme="reggae"] body:not(.impalero) .friend-altar h2 { color: #ffe145; text-shadow: 3px 3px #000; }
+html[data-theme="reggae"] body:not(.impalero) .temple-callout { border-color: #c22f1c; }
+html[data-theme="reggae"] body:not(.impalero) .visit-box strong { background: #020703; border: 3px inset #d4b629; }
+html[data-theme="reggae"] body:not(.impalero) .border-gif { background: #071b0c; border-color: #dcbc2e; }
+html[data-theme="reggae"] body:not(.impalero) .sidebar-portrait { border-color: #dcba2a !important; background: #102d10 !important; }
+
+html[data-theme="reggae"] body:not(.impalero) :is(.private-messages button, .photo-code-row button, .thanks-note #lucas-button, #impala-button, #wotsa-button, .temple-button, .temple-exit, .portal-strip a, #weird-dialog button) {
+  color: #ffe347;
+  background: #174d1d;
+  border: 4px outset #c3ac27;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #000;
+  box-shadow: 2px 2px 0 #000;
+}
+
+html[data-theme="reggae"] body:not(.impalero) :is(.private-messages button, .photo-code-row button, .thanks-note #lucas-button, #impala-button, #wotsa-button, .temple-button, .temple-exit, .portal-strip a, #weird-dialog button):hover {
+  color: #fff2af;
+  background: #8f2416;
+  border-color: #e6c837;
+}
+
+html[data-theme="reggae"] body:not(.impalero) :is(.private-messages button, .photo-code-row button, .thanks-note #lucas-button, #impala-button, #wotsa-button, .temple-button, .temple-exit, #weird-dialog button):active { border-style: inset; }
+html[data-theme="reggae"] body:not(.impalero) .portal-strip a span { color: #fff4b9; }
+html[data-theme="reggae"] body:not(.impalero) .private-messages label { color: #fff4b9; }
+html[data-theme="reggae"] body:not(.impalero) .photo-gate { background: #071b0c url('assets/theme-reggae-weave.svg') repeat; border: 3px inset #b5a334; }
+html[data-theme="reggae"] body:not(.impalero) .photo-lock { color: #efcc35; }
+
+html[data-theme="reggae"] body:not(.impalero) :is(.private-messages textarea, .photo-code-row input) {
+  color: #fbdf69;
+  background: #030b05;
+  border: 3px inset #78a53b;
+  font-family: 'Courier New', Courier, monospace;
+  caret-color: #ffe23b;
+}
+
+html[data-theme="reggae"] body:not(.impalero) :is(.private-messages textarea, .photo-code-row input, .private-messages button, .photo-code-row button, .temple-button, .temple-exit, .portal-strip a, #impala-button, #wotsa-button, #lucas-button):focus-visible {
+  outline: 3px solid #ffe54a;
+  outline-offset: 3px;
+}
+
+html[data-theme="reggae"] body:not(.impalero) .photo-gate.invalid-code input,
+html[data-theme="reggae"] body:not(.impalero) .private-messages form[data-result="error"] :is(textarea, button) { border-color: #f44b27; }
+html[data-theme="reggae"] body:not(.impalero) .private-messages form[data-result="error"] button { color: #ff7955; }
+html[data-theme="reggae"] body:not(.impalero) .private-messages form[data-result="sent"] button { color: #a1ef5e; border-color: #76c341; }
+
+html[data-theme="reggae"] body:not(.impalero) .page-shell > footer {
+  color: #f3de8d;
+  background: #061108 url('assets/theme-reggae-wall.svg') repeat;
+  border-top: 8px ridge #c19e25;
+}
+
+html[data-theme="reggae"] body:not(.impalero) .page-shell > footer > p:first-child { color: #ffe23d; text-shadow: 2px 2px #000; }
+html[data-theme="reggae"] body:not(.impalero) .footer-end { color: #ddc960; }
+
+/* Theme only the regular site dialog, leaving the two full-screen effects alone. */
+html[data-theme="reggae"] body:not(.impalero) #weird-dialog {
+  color: #fff3b9;
+  background: #071b0c url('assets/theme-reggae-weave.svg') repeat;
+  border: 6px ridge #d8b42b;
+  box-shadow: 7px 7px #000;
+}
+
+html[data-theme="reggae"] body:not(.impalero) #weird-dialog .dialog-bar { background: #912418; color: #ffe244; border-color: #d5b128; font-family: 'Courier New', Courier, monospace; }
+html[data-theme="reggae"] body:not(.impalero) #weird-dialog :is(.dialog-content h2, .dialog-content a, .secret-symbol) { color: #f4d43f; }
+html[data-theme="reggae"] body:not(.impalero) #weird-dialog .lucas-surprise img { border-color: #359943; }
+html[data-theme="reggae"] body:not(.impalero) #weird-dialog .secret-hint { color: #fff4b9; border-color: #ac9c3a; }
+
+/* The temple keeps its images and copy inside the same rasta frame system. */
+html[data-theme="reggae"] body.temple-page:not(.impalero) .temple-shell { border-color: #d8b92a; }
+html[data-theme="reggae"] body:not(.impalero) .temple-nav { background: #0b3113 url('assets/theme-reggae-weave.svg') repeat; border-bottom: 6px ridge #d8b329; font-family: 'Courier New', Courier, monospace; }
+html[data-theme="reggae"] body:not(.impalero) .temple-main { background: #050b05 url('assets/theme-reggae-wall.svg') repeat; }
+html[data-theme="reggae"] body:not(.impalero) .temple-eyebrow { color: #ffdf3d; text-shadow: 1px 1px #000; }
+
+html[data-theme="reggae"] body:not(.impalero) .temple-main h1 {
+  color: #ffe13f;
+  background: #0a3213;
+  border: 6px ridge #d3b125;
+  border-bottom-color: #bd2c1d;
+  padding: 14px 12px;
+  text-shadow: 3px 3px #8d1f13;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+html[data-theme="reggae"] body:not(.impalero) .baphomet-center {
+  background: #09250f url('assets/theme-reggae-weave.svg') repeat;
+  border: 7px ridge #debd30;
+  border-top: 20px ridge #ab2718;
+  box-shadow: 5px 5px #000;
+}
+
+html[data-theme="reggae"] body:not(.impalero) .baphomet-center figcaption { color: #f9d745; }
+html[data-theme="reggae"] body:not(.impalero) .temple-sigils { color: #ecbe2b; }
+html[data-theme="reggae"] body.temple-page:not(.impalero) footer > a { color: #ffdf3a; }
+html[data-theme="reggae"] body.temple-page:not(.impalero) footer :is(p, p a) { color: #ffe9a0; }
+html[data-theme="reggae"] body:not(.impalero) .blood-edge { background: #d4ad23; }
+html[data-theme="reggae"] body:not(.impalero) .blood-edge i { background: #2e8f31; }
+html[data-theme="reggae"] body:not(.impalero) .blood-edge i:nth-child(3n) { background: #c82b18; }
+html[data-theme="reggae"] body:not(.impalero) .blood-edge i:nth-child(3n + 1) { background: #dfbe2b; }
+
+@media (max-width: 800px) {
+  html[data-theme="reggae"] body:not(.impalero) .masthead::before { background-size: 105px 105px, 105px 105px, 192px 192px; }
+}
+
+@media (max-width: 560px) {
+  html[data-theme="reggae"] body:not(.impalero) .page-shell { border-width: 4px; outline-width: 1px; outline-offset: 0; }
+  html[data-theme="reggae"] body:not(.impalero) .masthead { border-width: 6px 0; }
+  html[data-theme="reggae"] body:not(.impalero) .masthead::before { background-size: 88px 88px, 88px 88px, 160px 160px; }
+  html[data-theme="reggae"] body:not(.impalero) .welcome-box { border-width: 5px; border-left-width: 7px; background-size: 62px 62px; }
+  html[data-theme="reggae"] body:not(.impalero) .welcome-kicker { padding-right: 57px; }
+  html[data-theme="reggae"] body:not(.impalero) .friend-altar { border-width: 5px; border-top-width: 13px; background-size: 56px 56px, 56px 56px, auto; }
+  html[data-theme="reggae"] body:not(.impalero) .friend-altar h2 { font-size: 42px; }
+  html[data-theme="reggae"] body:not(.impalero) .baphomet-center { border-width: 4px; border-top-width: 12px; }
+  html[data-theme="reggae"] body:not(.impalero) .temple-main h1 { padding: 12px 7px; border-width: 4px; }
+}
