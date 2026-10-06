@@ -12,7 +12,8 @@
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="style.css?v=13">
   <script id="site-texts" type="application/json">{"dynamic-window-430644bb-body-0":"T AMO LUCAS\nte conoci y desde el principio me empezaste a llamar la atención, me gustas de una forma lokisima,  \na ver para cuando activamos esos besos","dynamic-shared-ok-0":"ESAAAA"}</script>
-  <script src="photo-gate.js?v=1" defer></script>
+  <link rel="stylesheet" href="photo-gate.css?v=2">
+  <script src="photo-gate.js?v=2" defer></script>
   <script src="script.js?v=12" defer=""></script>
   <script src="impalero.js?v=13" defer></script>
   <link rel="stylesheet" href="impalero.css?v=14">
@@ -104,7 +105,8 @@
               <div class="photo-image photo-locked" id="irl-photo-frame">
                 <form id="irl-photo-gate" class="photo-gate" autocomplete="off">
                   <svg class="photo-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="5" y="10" width="14" height="11"/><path d="M8 10V6a4 4 0 0 1 8 0v4"/><path d="M12 14v3"/></svg>
-                  <div class="photo-code-row"><input id="irl-photo-code" type="password" aria-label="Código" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="go"><button type="submit" aria-label="Ver foto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="8" cy="8" r="4"/><path d="m11 11 9 9m-4-4 3-3m-6 0 3-3"/></svg></button></div>
+                  <div class="photo-code-row"><input id="irl-photo-code" type="password" aria-label="Código" aria-describedby="irl-photo-feedback" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="go"><button type="submit" aria-label="Ver foto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="8" cy="8" r="4"/><path d="m11 11 9 9m-4-4 3-3m-6 0 3-3"/></svg></button></div>
+                  <p id="irl-photo-feedback" class="photo-code-feedback" role="status" hidden></p>
                 </form>
                 <img id="irl-photo" width="4000" height="3000" alt="Gino con anteojos y buzo oscuro, junto a un árbol en una plaza." hidden>
               </div>
