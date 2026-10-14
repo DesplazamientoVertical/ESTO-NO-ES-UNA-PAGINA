@@ -110,8 +110,8 @@ dialog{background:#000;color:#fff;border:4px solid;border-color:#ff16b6 #eaff00 
 .thanks-note{border-color:#ff16b6;box-shadow:6px 6px #ff7838}.thanks-note h2{color:#ff16b6}
 .friend-altar{border-color:#00eaff;border-top-color:#eaff00;box-shadow:7px 7px #ff16b6,-4px 0 #7735ff}.friend-altar h2{color:#ffb136}
 .odd-gif-grid figure{border-color:#00eaff}.odd-gif-grid figure:nth-child(even){border-color:#ff7838;box-shadow:5px 5px #ff16b6}
-#lucas-button{margin:4px 0 12px;padding:8px 13px;background:#ff16b6;color:#000;border:3px outset #eaff00;box-shadow:3px 3px #00eaff;font-size:16px;font-weight:bold}
-.lucas-surprise{margin:0;text-align:center}.lucas-surprise img{display:block;width:100%;max-width:498px;height:auto;margin:auto;border:2px solid #00eaff;image-rendering:auto}.lucas-surprise h2{color:#ffb136;font-size:30px;line-height:1.2;margin:17px 0 0}
+
+
 
 @media(max-width:800px){.masthead{min-height:230px}.friends-note{padding:12px 8px}.friends-note h2{font-size:17px}.friends-note p{font-size:14px}}
 @media(max-width:560px){.masthead{min-height:0}.acid-background{--wave-size:420px}.friends-note{order:0;margin:5px 7px 0;max-width:100%}.friends-note h2{font-size:23px}.friends-note p{font-size:17px}.sticker-bomb{gap:16px 12px}.anarchy-sticker,.communist-sticker{width:99px}.pasted-sticker .flag-gif{width:82px;height:82px}.pasted-sticker .logo-gif{width:54px;height:54px}.linux-sticker{width:166px}.linux-sticker span{font-size:11px}.album-note{order:2;margin:5px 7px}.album-cover{max-width:250px;margin:auto}.album-note p{font-size:17px}.thanks-note h2{font-size:31px}.odd-gif-grid{gap:12px}.odd-gif-grid img{height:123px}.odd-gif-grid figure{padding:5px}.friend-altar{padding:25px 13px 15px}.friend-altar h2{font-size:39px}.altar-portrait{gap:10px}.altar-star{width:32px;height:32px;flex-basis:32px}.brandon-dedication{font-size:17px}.temple-callout{grid-column:1/-1;display:flex;align-items:center;justify-content:center;gap:14px}.temple-callout>img{width:66px;height:66px;margin:0}.temple-button{padding:14px;font-size:18px}}

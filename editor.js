@@ -173,7 +173,7 @@
     toggle.textContent = editing ? '✓ ver sin marcas' : '✎ editar textos';
     $('#editor-done').textContent = editing ? 'Ver sin marcas' : 'Seguir editando';
     $('#editor-instructions').textContent = editing
-      ? (modal ? 'Tocá un texto marcado y escribí. Usá «Ventanas» para editar el mensaje de Lucas. Para probarlo, elegí «Ver sin marcas».' : 'Tocá un texto marcado y escribí. Para probar los enlaces, elegí «Ver sin marcas».')
+      ? (modal ? 'Tocá un texto marcado y escribí. Para probarlo, elegí «Ver sin marcas».' : 'Tocá un texto marcado y escribí. Para probar los enlaces, elegí «Ver sin marcas».')
       : `Esta es la vista previa de tu borrador. Para que se vea en tu web, descargá ${fileName} y subilo a GitHub.`;
     for (const {element, original} of fields.values()) if (element.isConnected) fieldMode(element,original);
     for (const details of document.querySelectorAll('.blog-post details')) {

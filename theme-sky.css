@@ -242,17 +242,8 @@ html[data-theme="cielo"] body:not(.impalero) .thanks-note{
   border-color:#e1b62d;
 }
 html[data-theme="cielo"] body:not(.impalero) .thanks-kicker{color:#9c7010}
-html[data-theme="cielo"] body:not(.impalero) .thanks-note #lucas-button{
-  background:#0957c4;
-  color:#fff4bb;
-  border-color:#f2cf61;
-  text-shadow:1px 1px 0 #003177;
-}
-html[data-theme="cielo"] body:not(.impalero) .thanks-note #lucas-button:hover{
-  background:#e6b92e;
-  color:#052967;
-  text-shadow:none;
-}
+
+
 html[data-theme="cielo"] body:not(.impalero) .friend-altar{
   background:#effaff url('assets/retro-sky-clouds.jpg') repeat;
   border-color:#e1b93a;
@@ -366,9 +357,7 @@ html[data-theme="cielo"] body:not(.impalero) #weird-dialog .secret-hint{
   background:#fff8d7;
   border-color:#bca44d;
 }
-html[data-theme="cielo"] body:not(.impalero) #weird-dialog .lucas-surprise img{
-  border-color:#d4ac31;
-}
+
 html[data-theme="cielo"] body:not(.impalero) #toast{
   background:#fff6bd;
   color:#052b75;

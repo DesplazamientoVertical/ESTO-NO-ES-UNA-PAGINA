@@ -188,7 +188,7 @@ html[data-theme="reggae"] body:not(.impalero) .visit-box strong { background: #0
 html[data-theme="reggae"] body:not(.impalero) .border-gif { background: #071b0c; border-color: #dcbc2e; }
 html[data-theme="reggae"] body:not(.impalero) .sidebar-portrait { border-color: #dcba2a !important; background: #102d10 !important; }
 
-html[data-theme="reggae"] body:not(.impalero) :is(.private-messages button, .photo-code-row button, .thanks-note #lucas-button, #impala-button, #wotsa-button, .temple-button, .temple-exit, .portal-strip a, #weird-dialog button) {
+html[data-theme="reggae"] body:not(.impalero) :is(.private-messages button, .photo-code-row button, #impala-button, #wotsa-button, .temple-button, .temple-exit, .portal-strip a, #weird-dialog button) {
   color: #ffe347;
   background: #174d1d url('assets/retro-reggae-dark-leaves.jpg') repeat;
   border: 4px outset #c3ac27;
@@ -198,13 +198,13 @@ html[data-theme="reggae"] body:not(.impalero) :is(.private-messages button, .pho
   box-shadow: 2px 2px 0 #000;
 }
 
-html[data-theme="reggae"] body:not(.impalero) :is(.private-messages button, .photo-code-row button, .thanks-note #lucas-button, #impala-button, #wotsa-button, .temple-button, .temple-exit, .portal-strip a, #weird-dialog button):hover {
+html[data-theme="reggae"] body:not(.impalero) :is(.private-messages button, .photo-code-row button, #impala-button, #wotsa-button, .temple-button, .temple-exit, .portal-strip a, #weird-dialog button):hover {
   color: #fff2af;
   background: #8f2416 url('assets/retro-rough-red.jpg') repeat;
   border-color: #e6c837;
 }
 
-html[data-theme="reggae"] body:not(.impalero) :is(.private-messages button, .photo-code-row button, .thanks-note #lucas-button, #impala-button, #wotsa-button, .temple-button, .temple-exit, #weird-dialog button):active { border-style: inset; }
+html[data-theme="reggae"] body:not(.impalero) :is(.private-messages button, .photo-code-row button, #impala-button, #wotsa-button, .temple-button, .temple-exit, #weird-dialog button):active { border-style: inset; }
 html[data-theme="reggae"] body:not(.impalero) .portal-strip a span { color: #fff4b9; }
 html[data-theme="reggae"] body:not(.impalero) .private-messages label { color: #fff4b9; }
 html[data-theme="reggae"] body:not(.impalero) .photo-gate { background: #071b0c url('assets/retro-reggae-dark-leaves.jpg') repeat; border: 3px inset #b5a334; }
@@ -218,7 +218,7 @@ html[data-theme="reggae"] body:not(.impalero) :is(.private-messages textarea, .p
   caret-color: #ffe23b;
 }
 
-html[data-theme="reggae"] body:not(.impalero) :is(.private-messages textarea, .photo-code-row input, .private-messages button, .photo-code-row button, .temple-button, .temple-exit, .portal-strip a, #impala-button, #wotsa-button, #lucas-button):focus-visible {
+html[data-theme="reggae"] body:not(.impalero) :is(.private-messages textarea, .photo-code-row input, .private-messages button, .photo-code-row button, .temple-button, .temple-exit, .portal-strip a, #impala-button, #wotsa-button):focus-visible {
   outline: 3px solid #ffe54a;
   outline-offset: 3px;
 }
@@ -247,7 +247,7 @@ html[data-theme="reggae"] body:not(.impalero) #weird-dialog {
 
 html[data-theme="reggae"] body:not(.impalero) #weird-dialog .dialog-bar { background: #912418 url('assets/retro-rough-red.jpg') repeat; color: #ffe244; border-color: #d5b128; font-family: 'Courier New', Courier, monospace; }
 html[data-theme="reggae"] body:not(.impalero) #weird-dialog :is(.dialog-content h2, .dialog-content a, .secret-symbol) { color: #f4d43f; }
-html[data-theme="reggae"] body:not(.impalero) #weird-dialog .lucas-surprise img { border-color: #359943; }
+
 html[data-theme="reggae"] body:not(.impalero) #weird-dialog .secret-hint { color: #fff4b9; border-color: #ac9c3a; }
 
 /* The temple keeps its images and copy inside the same rasta frame system. */

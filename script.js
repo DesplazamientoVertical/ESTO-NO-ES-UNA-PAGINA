@@ -60,8 +60,6 @@
   const nextVisit = Number.isSafeInteger(visits) && visits >= 0 ? Math.min(visits + 1, 999999) : 1;
   $('#visit-counter').textContent = String(nextVisit).padStart(6, '0');
   memory.set('visits', nextVisit);
-  const openLucas = () => openDialog('para Lucas', '<div class="lucas-surprise"><img src="assets/secreto-en-la-montana.gif" data-motion="assets/secreto-en-la-montana.gif" data-still="assets/secreto-en-la-montana.png" width="498" height="407" alt="Ennis y Jack abrazándose en Secreto en la montaña"><h2>T quiero luquitas</h2></div>');
-  $('#lucas-button').addEventListener('click',openLucas);
 
 
   document.addEventListener('pointermove',event => {

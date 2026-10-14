@@ -39,11 +39,6 @@ Los tres recursos se incluyen sin modificar. Sus clasificaciones de copyright no
 
 El pentagrama animado usa ahora trazos planos rojos sin resplandor; conserva sus 40 fotogramas y la versión quieta para movimiento reducido.
 
-## Ventana para Lucas
-
-`secreto-en-la-montana.gif`: fragmento animado de *Brokeback Mountain / Secreto en la montaña*, compartido por caseyanncollier en [Tenor](https://tenor.com/view/brokeback-mountain-ennis-and-jack-cowboys-jake-gyllenhaal-heath-ledger-gif-16265571). Copyright de los titulares de la película; no se declara una licencia libre. GIF incluido sin modificar; el PNG es su primer fotograma para movimiento reducido.
-
-
 # GIFs clásicos para el rediseño oscuro
 
 Seleccionados del corpus GeoCities conservado por Internet Archive / GifCities. Se descargaron los GIFs originales y se guardó una PNG del primer cuadro para movimiento reducido. No se modificó el contenido ni se generó material con IA.
